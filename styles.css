@@ -1,0 +1,571 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: lato;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* STYLES SITE */
+
+.home{
+	background: url(img/maxresdefault.jpg);
+	width: 100%;
+	height: 100vh;
+}
+
+.nav{
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #5987fa;
+	height: 40px;
+	z-index: 900;
+	text-align: center;
+}
+
+.nav li{
+	color: #fff;
+	display: inline-block;
+	padding-top: 12px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.logo_accueil{
+	position: absolute;
+	margin-top: 130px;
+	margin-left: 10%;
+	z-index: 100;
+}
+
+.titre_accueil{
+	position: absolute;
+	color: #fff;
+	font-size: 35px;
+	font-weight: bolder;
+	margin-top: 180px;
+	margin-left: 55%;
+	letter-spacing: 1px;
+	z-index: 100;
+}
+
+.sous_titre_accueil{
+	position: absolute;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bolder;
+	margin-top: 230px;
+	margin-left: 60%;
+	letter-spacing: 4px;
+	z-index: 100;
+}
+
+.btn_accueil{
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 65%;
+	width: 300px;
+	height: 50px;
+	background-color: #dc8221;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 30px;
+	font-weight: bolder;
+	letter-spacing: 5px;
+	z-index: 100;
+}
+
+.cadre_noir{
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	opacity: 0.4;
+}
+
+.presentation{
+	background-color: #fff;
+	width: 100%;
+	height: 100vh;
+}
+
+.describe{
+	width: 100%;
+}
+
+.logo_petit{
+	width: 300px;
+	margin-left: 8%;
+	font-weight: bolder;
+	font-size: 100px;
+	padding-top: 50px;
+	opacity: 1;
+}
+
+.texte_presentation{
+	position: relative;
+	margin-top: -290px;
+	margin-left: 56%;
+	width: 515px;
+	text-align: justify;
+	line-height: 40px;
+}
+
+.text{
+	opacity: 1;
+	color:white;
+}
+
+.img_bas{
+	opacity: 1;
+}
+
+.motivation{
+	padding-top: 60px;
+	margin-left: 56%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.pictures_shot{
+	width: 100%;
+	text-align: center;
+}
+
+.pictures_shot li{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 40px;
+}
+
+.btn_inscription{
+	display: block;
+	margin: 0 auto;
+	margin-top: -10px;
+	width: 1220px;
+	height: 40px;
+	text-align: center;
+	background-color: #fff;
+	border: 2px solid #5987fa;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 5px;
+	text-decoration: none;
+}
+
+.btn_insc{
+	text-decoration: none;
+}
+
+.inscription{
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+}
+
+.formulaire_inscription{
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 100px;
+}
+
+form {
+	text-align: center;
+    width: 100%;
+    padding-top: 170px;
+}
+
+form div + div {
+    margin-top: 3em;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+}
+
+input, textarea {
+    font: 1.5em sans-serif;
+    width: 500px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+#ancre_2{
+	background: #34495e;
+}
+
+button {
+	text-align: center;
+    width: 625px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: transparent;
+	border: 2px solid #5987fa;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*footer{
+	background-color: #5987fa;
+	width: 100%;
+	height: 100px;
+}*/
+
+.items_footer{
+	text-align: center;
+}
+
+.items_footer li{
+	color: #fff;
+	display: inline-block;
+	margin-top: 35px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.R_S{
+	text-align: center;
+}
+
+.R_S li{
+	display: inline-block;
+	margin-top: 15px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+
+			/*   COMPTE   */
+
+
+.compte{
+	background: url(img/maxresdefault_2.jpg);
+	width: 100%;
+	height: 100vh;
+}
+
+.mon_compte{
+	padding-top: 100px;
+	margin-left: 15%;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.photo_id{
+	margin-top: 50px;
+	margin-left: 15%;
+}
+
+.nom_id{
+	margin-left: 23%;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-top: -60px;
+	text-transform: uppercase;
+}
+
+.trophes{
+	color: #fff;
+	font-size: 13px;
+}
+
+.btn_jouer{
+	width: 200px;
+	height: 40px;
+	background-color: #5987fa;
+	font-size: 20px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-left: 71%;
+	cursor: pointer;
+}
+
+.tableau_scores{
+	width: 1000px;
+	text-align: center;
+	margin: 80px auto 0;
+	color: #00c0ff;
+	letter-spacing: 5px;
+	line-height: 30px;
+	border: 1px solid #5987fa;
+}
+
+.resultats{
+	font-weight: lighter;
+	color: #fff;
+}
+
+.footer_3{
+	background-color: #5987fa;
+}
+
+.items_footer_3{
+	text-align: center;
+}
+
+.items_footer_3 li{
+	color: #fff;
+	display: inline-block;
+	margin-top: 35px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.R_S_3{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.R_S_3 li{
+	display: inline-block;
+	margin-top: 15px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+
+			/*	CONNEXION	*/
+
+
+.souvenir{
+	width: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: -510px;
+}
+
+.remember_me{
+	font-style: italic;
+	font-size: 13px;
+}
+
+
+
+
+			/*	Classement	*/
+
+
+.classement{
+	width: 200px;
+	padding-top: 100px;
+	margin-left: 15%;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.tournois{
+	width: 1000px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.tournois li{
+	display: inline-block;
+	padding-right: 160px;
+}
+
+.tournois li:last-child{
+	padding-right: 0;
+}
+
+.tournois a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn_jouer{
+	margin-top: 50px;
+}
+
+.footer_2{
+	background-color: #5987fa;
+}
+
+.items_footer_2{
+	text-align: center;
+}
+
+.items_footer_2 li{
+	color: #fff;
+	display: inline-block;
+	margin-top: 35px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.R_S_2{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.R_S_2 li{
+	display: inline-block;
+	margin-top: 15px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+
+
+
+			/*	COMPTE ARRIVÉE	*/
+
+
+
+button{
+	margin-top: 50px;
+	width: 500px;
+	height: 50px;
+}
+
+.boutons{
+	width: 100%;
+	text-align: center;
+	padding-top: 200px;
+	line-height: 200px;
+}
+
+
+
+			/*	FORMULAIRE INSCRIPTION	*/
+
+
+.btn_formulaire_inscription{
+	width: 100%;
+	text-align: center;
+}
+
+.btn_formulaire_inscription button{
+	width: 630px;
+	height: 40px;
+}
+
+
+
+			/*	FORMULAIRE CONNEXION	*/
+
+
+.btn_formulaire_connexion{
+	width: 100%;
+	text-align: center;
+}
+
+.btn_formulaire_connexion button{
+	margin-top: -100px;
+	width: 630px;
+	height: 40px;
+}
+
+
+
+
+			/*	QUI SOMMES-NOUS ?	*/
+
+.qui_sommes_nous{
+	background: url(img/maxresdefault_2.jpg);
+	width: 100%;
+	height: 20vh;
+}
+
+ .qui{
+ 	width: 350px;
+	padding-top: 100px;
+	margin-left: 15%;
+	color: #fff;
+	font-size: 30px;
+	font-weight: bolder;
+	text-transform: uppercase;
+ }
+
+ .equipe{
+ 	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	padding-top: 20px;
+	text-align: center;
+ }
+
+ .equipe li{
+ 	display: inline-block;
+ 	margin-left: 300px;
+ }
+
+ .equipe li:first-child{
+ 	margin-left: 0;
+ }
